@@ -1,0 +1,1284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Профессиональная оклейка авто плёнкой, тонировка и ремонт фар в Бобруйске. Гарантия 5 лет."
+    />
+    <title>GLOSS.POINT - Детейлинг студия в Бобруйске</title>
+    <!-- <link rel="icon" href="./imeges/favicon.png" type="image/png"> -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./imeges/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link
+      rel="./apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/whyus.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/pricing.css" />
+    <link rel="stylesheet" href="/css/review.css" />
+    <link rel="stylesheet" href="/css/contacts.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo"
+          >GLOSS.<br /><span class="logo__acent">POINT</span></a
+        >
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#pricing">Цены</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacts" class="btn btn__outline" data-modal="open"
+          >Записаться</a
+        >
+
+        <button class="burger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title fade-in">
+              ЗАЩИТА И СТИЛЬ<br />
+              ВАШЕГО<br />
+              АВТОМОБИЛЯ<br />
+              В БОБРУЙСКЕ
+            </h1>
+
+            <p class="hero__subtitle fade-in">
+              ➜ Профессиональная оклейка антигравийной плёнкой и тонировка.<br />
+              ➜ Гарантия качества.<br />
+              ➜ Работаем с любыми марками.
+            </p>
+
+            <a
+              href="#contacts"
+              class="btn btn__primary btn__large fade-in"
+              data-modal="open"
+              >ЗАПИСАТЬСЯ НА ОСМОТР</a
+            >
+
+            <div class="hero__features">
+              <div class="feature fade-in">
+                <span class="feature__icon">🌐</span>
+                <span>Материалы США</span>
+              </div>
+
+              <div class="feature fade-in">
+                <span class="feature__icon">⌚</span>
+                <span>Срок от 1 дня</span>
+              </div>
+
+              <div class="feature fade-in">
+                <span class="feature__icon">🛡️</span>
+                <span>Гарантия 5 лет</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal" id="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <button class="modal__close" aria-label="Закрыть">
+            <span></span>
+            <span></span>
+          </button>
+
+          <h2 class="modal__title">
+            Записаться на
+            <span id="modalServiceName" style="color: var(--color-accent)"
+              >услугу</span
+            >
+          </h2>
+
+          <div class="tabs">
+            <button class="tabs__btn tabs__btn—active" data-tab="form">
+              Оставить заявку
+            </button>
+            <button class="tabs__btn" data-tab="calendar">Выбрать время</button>
+          </div>
+
+          <div class="tabs__content tabs__content—active" id="tab-form">
+            <p class="modal__subtitle">
+              Оставьте заявку, и мы перезвоним вам в течение 15 минут
+            </p>
+
+            <form class="modal__form" id="modalForm">
+              <div class="form__group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <input type="tel" name="phone" placeholder="Телефон" required />
+              </div>
+
+              <div class="form__group">
+                <textarea
+                  name="message"
+                  placeholder="Комментарий (необязательно)"
+                  rows="«3»"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn__primary btn__large"
+                id="submitBtn"
+                disabled
+              >
+                Отправить заявку
+              </button>
+
+              <p class="form__privacy">
+                <!-- Нажимая кнопку, вы соглашаетесь с 
+                <a href='policy.html' target='_blank'>политикой конфиденциальности</a> -->
+                <label class="privacy-checkbox">
+                  <input type="checkbox" id="privacyCheckbox" required />
+                  <span
+                    >Я согласен с
+                    <a href="policy.html" target="_blank">
+                      политикой конфиденциальности</a
+                    >
+                    и
+                    <a href="terms.html" target="_blank"
+                      >пользовательским соглашением.</a
+                    ></span
+                  >
+                </label>
+              </p>
+            </form>
+          </div>
+
+          <!-- <!— КОНТЕНТ ВКЛАДКИ 2: Календарь —> -->
+          <div class="tabs__content" id="tab-calendar">
+            <p class="modal__subtitle">
+              Выберите удобную дату и время — слоты обновляются в реальном
+              времени
+            </p>
+
+            <!-- <!— Сюда вставим Cal.com —> -->
+            <!-- <div id='cal-com-container' class='cal-container'></div> -->
+            <iframe
+              src="https://cal.com/кристина-семенова-lllu0i/осмотр-авто"
+              id="bookingIframe"
+              frameborder="0"
+              class="cal-iframe"
+              allowfullscreen
+              title="Календарь записи"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services__content">
+            <h2 class="services__title fade-in">
+              наши <span class="services__title--blue">услуги</span>
+            </h2>
+
+            <div class="services__grid">
+              <div class="services__card services__card--one fade-in-scale">
+                <!-- <img src="imeges/винил.webp"> -->
+                <div class="card__overlay">
+                  <h3 class="card__title">Оклейка винилом</h3>
+                  <ul class="card__list">
+                    <li>Смена цвета</li>
+                    <li>Матовые/ глянцевые эфекты</li>
+                    <li>Хамелеоны</li>
+                  </ul>
+                  <a href="./services/vinyl.html" class="card__btn"
+                    >От 200 BYN ⇥</a
+                  >
+                </div>
+              </div>
+
+              <div class="services__card services__card--two fade-in-scale">
+                <div class="card__overlay">
+                  <h3 class="card__title">защитная плёнка (PPF)</h3>
+                  <ul class="card__list">
+                    <li>Антигравийная защита кузова</li>
+                    <li>Спасает от сколов и реагентов</li>
+                  </ul>
+                  <a href="./services/ppf.html" class="card__btn"
+                    >От 400 BYN ⇥</a
+                  >
+                </div>
+              </div>
+
+              <div class="services__card services__card--three fade-in-scale">
+                <div class="card__overlay">
+                  <h3 class="card__title">тонировка авто</h3>
+                  <ul class="card__list">
+                    <li>Американские плёнки</li>
+                    <li>Гарантия на работу</li>
+                  </ul>
+                  <a href="./services/tinting.html" class="card__btn"
+                    >От 500 BYN ⇥</a
+                  >
+                </div>
+              </div>
+
+              <div class="services__card services__card--four fade-in-scale">
+                <div class="card__overlay">
+                  <h3 class="card__title">реставрация, ретрофит фар</h3>
+                  <ul class="card__list">
+                    <li>Полировка</li>
+                    <li>Бронирование</li>
+                    <li>Замена линз</li>
+                  </ul>
+                  <a href="./services/headlights.html" class="card__btn"
+                    >От 300 BYN ⇥</a
+                  >
+                </div>
+              </div>
+
+              <div class="services__card services__card--five fade-in-scale">
+                <div class="card__overlay">
+                  <h3 class="card__title">Архитектурная тонировка</h3>
+                  <ul class="card__list">
+                    <li>Тонировка окон квартир и офисов</li>
+                    <li>Защита от солнца и взглядов</li>
+                  </ul>
+                  <a href="./services/architectural.html" class="card__btn"
+                    >От 300 BYN ⇥</a
+                  >
+                </div>
+              </div>
+
+              <div class="services__card services__card--six fade-in-scale">
+                <div class="card__overlay">
+                  <h3 class="card__title">антикор и детейлинг</h3>
+                  <ul class="card__list">
+                    <li>Обработка днища, арок</li>
+                    <li>Комплексная мойка</li>
+                    <li>Химчистка</li>
+                  </ul>
+                  <a href="./services/detailing.html" class="card__btn"
+                    >От 200 BYN ⇥</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us" id="why-us">
+        <div class="container">
+          <h2 class="why-us__title fade-in">
+            Почему <span class="why-us__title--blue">выбирают</span> нас
+          </h2>
+
+          <div class="why-us__grid">
+            <!-- Карточка 1 -->
+            <div class="glass-card why-us__card fade-in-scale">
+              <div class="glass-card__number">01</div>
+              <div class="glass-card__icon">
+                <!-- Иконка "Опыт" (человек со звездами) -->
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M19 8l2 2 4-4"></path>
+                  <path d="M19 13l2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="glass-card__title">Опыт 5+ лет</h3>
+              <ul class="glass-card__list">
+                <li>Оклейка более 50 автомобилей</li>
+                <li>Знаем все нюансы работы с разными марками</li>
+              </ul>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="glass-card why-us__card fade-in-scale">
+              <div class="glass-card__number">02</div>
+              <div class="glass-card__icon">
+                <!-- Иконка "Флаг США" (условно) -->
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="glass-card__title">Материалы США</h3>
+              <ul class="glass-card__list">
+                <li>
+                  Работаем только с проверенными плёнками SunTek, Llumar, Hexis
+                </li>
+                <li>Никакого дешёвого Китая</li>
+              </ul>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="glass-card why-us__card fade-in-scale">
+              <div class="glass-card__number">03</div>
+              <div class="glass-card__icon">
+                <!-- Иконка "Гарантия" (щит/галочка) -->
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <h3 class="glass-card__title">Гарантия 5 лет</h3>
+              <ul class="glass-card__list">
+                <li>Даём официальную гарантию на все работы</li>
+                <li>Если что-то пойдёт не так — переделаем бесплатно</li>
+              </ul>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="glass-card why-us__card fade-in-scale">
+              <div class="glass-card__number">04</div>
+              <div class="glass-card__icon">
+                <!-- Иконка "Чистота" (веник/искра) -->
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  ></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="12" y1="18" x2="12" y2="12"></line>
+                  <line x1="9" y1="15" x2="15" y2="15"></line>
+                </svg>
+              </div>
+              <h3 class="glass-card__title">Чистая студия</h3>
+              <ul class="glass-card__list">
+                <li>Тёплое помещение с хорошей вентиляцией</li>
+                <li>Машина не пылится во время работы</li>
+              </ul>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="glass-card why-us__card fade-in-scale">
+              <div class="glass-card__number">05</div>
+              <div class="glass-card__icon">
+                <!-- Иконка "Фотоотчет" (камера) -->
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                  ></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+              </div>
+              <h3 class="glass-card__title">Фотоотчёт каждого этапа</h3>
+              <ul class="glass-card__list">
+                <li>Присылаем фото процесса в WhatsApp</li>
+                <li>Вы всегда знаете, что происходит с вашим авто</li>
+              </ul>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="glass-card why-us__card fade-in-scale">
+              <div class="glass-card__number">06</div>
+              <div class="glass-card__icon">
+                <!-- Иконка "Календарь" -->
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="glass-card__title">Работаем без выходных</h3>
+              <ul class="glass-card__list">
+                <li>Пн-Пт с 10.00 до 21.00</li>
+                <li>Подберём удобное время для записи</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title fade-in">
+            Наши <span class="portfolio__title--blue">работы</span>
+          </h2>
+          <p class="portfolio__subtitle fade-in">
+            Двигай ползунок, чтобы увидеть результат
+          </p>
+
+          <div class="portfolio__carousel">
+            <!-- Работа 1 -->
+            <div class="portfolio__card fade-in-scale">
+              <div class="comparison-slider" data-comparison>
+                <div
+                  class="comparison-slider__image comparison-slider__image--before"
+                >
+                  <img src="./imeges/portfolio befor.webp" alt="До оклейки" />
+                </div>
+                <div
+                  class="comparison-slider__image comparison-slider__image--after"
+                >
+                  <img
+                    src="./imeges/portfolio after.webp"
+                    alt="После оклейки"
+                  />
+                </div>
+                <div class="comparison-slider__handle">
+                  <div class="comparison-slider__line"></div>
+                  <div class="comparison-slider__button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__card-content">
+                <h3 class="portfolio__card-title">BMW M5 — оклейка винилом</h3>
+                <p class="portfolio__card-desc">
+                  Полная оклейка кузова матовой плёнкой SunTek. Срок работы: 3
+                  дня.
+                </p>
+              </div>
+            </div>
+
+            <!-- Работа 2 -->
+            <div class="portfolio__card fade-in-scale">
+              <div class="comparison-slider" data-comparison>
+                <div
+                  class="comparison-slider__image comparison-slider__image--before"
+                >
+                  <img src="./imeges/portfolio befor.webp" alt="До тонировки" />
+                </div>
+                <div
+                  class="comparison-slider__image comparison-slider__image--after"
+                >
+                  <img
+                    src="./imeges/portfolio after.webp"
+                    alt="После тонировки"
+                  />
+                </div>
+                <div class="comparison-slider__handle">
+                  <div class="comparison-slider__line"></div>
+                  <div class="comparison-slider__button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__card-content">
+                <h3 class="portfolio__card-title">
+                  Audi Q7 — тонировка стёкол
+                </h3>
+                <p class="portfolio__card-desc">
+                  Тонировка задних стёкол плёнкой Llumar ATR 35. Гарантия 5 лет.
+                </p>
+              </div>
+            </div>
+
+            <!-- Работа 3 -->
+            <div class="portfolio__card fade-in-scale">
+              <div class="comparison-slider" data-comparison>
+                <div
+                  class="comparison-slider__image comparison-slider__image--before"
+                >
+                  <img src="./imeges/portfolio befor.webp" alt="До полировки" />
+                </div>
+                <div
+                  class="comparison-slider__image comparison-slider__image--after"
+                >
+                  <img
+                    src="./imeges/portfolio after.webp"
+                    alt="После полировки"
+                  />
+                </div>
+                <div class="comparison-slider__handle">
+                  <div class="comparison-slider__line"></div>
+                  <div class="comparison-slider__button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__card-content">
+                <h3 class="portfolio__card-title">
+                  Mercedes S-Class — полировка фар
+                </h3>
+                <p class="portfolio__card-desc">
+                  Восстановление прозрачности фар + бронирование плёнкой.
+                </p>
+              </div>
+            </div>
+
+            <!-- Работа 4 -->
+            <div class="portfolio__card fade-in-scale">
+              <div class="comparison-slider" data-comparison>
+                <div
+                  class="comparison-slider__image comparison-slider__image--before"
+                >
+                  <img src="./imeges/portfolio befor.webp" alt="До PPF" />
+                </div>
+                <div
+                  class="comparison-slider__image comparison-slider__image--after"
+                >
+                  <img src="./imeges/portfolio after.webp" alt="После PPF" />
+                </div>
+                <div class="comparison-slider__handle">
+                  <div class="comparison-slider__line"></div>
+                  <div class="comparison-slider__button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__card-content">
+                <h3 class="portfolio__card-title">
+                  Porsche 911 — защитная плёнка PPF
+                </h3>
+                <p class="portfolio__card-desc">
+                  Оклейка передней части кузова прозрачной плёнкой SunTek PPF.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="pricing__title fade-in">
+            Тарифы и <span class="pricing__title--blue">цены</span>
+          </h2>
+          <p class="pricing__subtitle fade-in">
+            Выберите подходящий пакет услуг или закажите индивидуальный расчёт
+          </p>
+
+          <div class="pricing__grid">
+            <!-- Тариф 1: Базовый -->
+            <div class="pricing-card fade-in-scale">
+              <div class="pricing-card__header">
+                <h3 class="pricing-card__name">Базовый</h3>
+                <p class="pricing-card__desc">Одна услуга на выбор</p>
+              </div>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">от 200</span>
+                <span class="pricing-card__currency">BYN</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Оклейка винилом (1 элемент)</li>
+                <li>Или тонировка 1 стекла</li>
+                <li>Или полировка фар</li>
+                <li>Гарантия 1 год</li>
+                <li>Срок работы: 1 день</li>
+              </ul>
+              <a
+                href="#"
+                class="pricing-card__btn btn btn__outline"
+                data-modal="open"
+                data-service="Базовый тариф"
+              >
+                Выбрать тариф
+              </a>
+            </div>
+
+            <!-- Тариф 2: Стандарт (популярный) -->
+            <div class="pricing-card pricing-card--popular fade-in-scale">
+              <div class="pricing-card__badge">Популярный выбор</div>
+              <div class="pricing-card__header">
+                <h3 class="pricing-card__name">Стандарт</h3>
+                <p class="pricing-card__desc">Комплексная защита</p>
+              </div>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">от 600</span>
+                <span class="pricing-card__currency">BYN</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Оклейка 2-3 элементов винилом</li>
+                <li>Тонировка задних стёкол</li>
+                <li>Полировка + бронирование фар</li>
+                <li>Химчистка салона в подарок</li>
+                <li>Гарантия 3 года</li>
+                <li>Срок работы: 2-3 дня</li>
+              </ul>
+              <a
+                href="#"
+                class="pricing-card__btn btn btn__primary"
+                data-modal="open"
+                data-service="Стандарт тариф"
+              >
+                Выбрать тариф
+              </a>
+            </div>
+
+            <!-- Тариф 3: Премиум -->
+            <div class="pricing-card fade-in-scale">
+              <div class="pricing-card__header">
+                <h3 class="pricing-card__name">Премиум</h3>
+                <p class="pricing-card__desc">Полная защита автомобиля</p>
+              </div>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">от 1500</span>
+                <span class="pricing-card__currency">BYN</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Полная оклейка кузова PPF</li>
+                <li>Тонировка всех стёкол</li>
+                <li>Антикоррозийная обработка</li>
+                <li>Детейлинг салона и кузова</li>
+                <li>Гарантия 5 лет</li>
+                <li>Срок работы: 5-7 дней</li>
+              </ul>
+              <a
+                href="#"
+                class="pricing-card__btn btn btn__outline"
+                data-modal="open"
+                data-service="Премиум тариф"
+              >
+                Выбрать тариф
+              </a>
+            </div>
+          </div>
+
+          <div class="pricing__note fade-in-scale">
+            <p>
+              💡 Точная стоимость зависит от марки автомобиля и объёма работ.
+              <a href="#" data-modal="open">Запишитесь на бесплатный осмотр</a>
+              — мы рассчитаем цену индивидуально.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title fade-in">
+            Отзывы <span class="reviews__title--blue">клиентов</span>
+          </h2>
+          <p class="reviews__subtitle fade-in">
+            Нам доверяют владельцы BMW, Mercedes, Audi и других премиальных авто
+          </p>
+
+          <div class="reviews__carousel">
+            <button
+              class="reviews__nav reviews__nav--prev"
+              aria-label="Предыдущий отзыв"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="reviews__track">
+              <!-- Отзыв 1 -->
+              <div class="review-card fade-in-scale">
+                <div class="review-card__header">
+                  <div class="review-card__avatar">
+                    <img src="./imeges/avatarka.webp" alt="Александр К." />
+                  </div>
+                  <div class="review-card__info">
+                    <h4 class="review-card__name">Александр К.</h4>
+                    <p class="review-card__meta">
+                      <span class="review-card__service">Оклейка BMW M5</span>
+                      <span class="review-card__date">Октябрь 2026</span>
+                    </p>
+                  </div>
+                  <div class="review-card__badge">✓ Проверен</div>
+                </div>
+                <div class="review-card__rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="review-card__text">
+                  "Оклеил весь кузов матовым винилом SunTek. Ребята работают
+                  чисто, в тёплом боксе — ни одной пылинки под плёнкой. Сделали
+                  за 3 дня, как и обещали. Машина выглядит как космический
+                  корабль! Отдельное спасибо за фотоотчёт каждого этапа в
+                  WhatsApp."
+                </p>
+              </div>
+
+              <!-- Отзыв 2 -->
+              <div class="review-card fade-in-scale">
+                <div class="review-card__header">
+                  <div class="review-card__avatar">
+                    <img src="./imeges/avatarka.webp" alt="Мария С." />
+                  </div>
+                  <div class="review-card__info">
+                    <h4 class="review-card__name">Мария С.</h4>
+                    <p class="review-card__meta">
+                      <span class="review-card__service"
+                        >Тонировка Audi Q7</span
+                      >
+                      <span class="review-card__date">Сентябрь 2026</span>
+                    </p>
+                  </div>
+                  <div class="review-card__badge">✓ Проверен</div>
+                </div>
+                <div class="review-card__rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="review-card__text">
+                  "Тонировала задние стёкла плёнкой Llumar. В салоне стало
+                  намного комфортнее, дети не жалуются на солнце. Гарантия 5 лет
+                  — это подкупает. Цена адекватная для такого качества.
+                  Рекомендую!"
+                </p>
+              </div>
+
+              <!-- Отзыв 3 -->
+              <div class="review-card fade-in-scale">
+                <div class="review-card__header">
+                  <div class="review-card__avatar">
+                    <img src="./imeges/avatarka.webp" alt="Дмитрий В." />
+                  </div>
+                  <div class="review-card__info">
+                    <h4 class="review-card__name">Дмитрий В.</h4>
+                    <p class="review-card__meta">
+                      <span class="review-card__service"
+                        >PPF + полировка фар</span
+                      >
+                      <span class="review-card__date">Август 2026</span>
+                    </p>
+                  </div>
+                  <div class="review-card__badge">✓ Проверен</div>
+                </div>
+                <div class="review-card__rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="review-card__text">
+                  "Приехал на полировку фар, уговорили ещё оклеить переднюю
+                  часть защитной плёнкой. Не пожалел — через месяц камень
+                  прилетел в капот, плёнка спасла. Фары как новые, светят ярко.
+                  Парни профи, видно опыт."
+                </p>
+              </div>
+
+              <!-- Отзыв 4 -->
+              <div class="review-card fade-in-scale">
+                <div class="review-card__header">
+                  <div class="review-card__avatar">
+                    <img src="./imeges/avatarka.webp" alt="Игорь Л." />
+                  </div>
+                  <div class="review-card__info">
+                    <h4 class="review-card__name">Игорь Л.</h4>
+                    <p class="review-card__meta">
+                      <span class="review-card__service">Полный детейлинг</span>
+                      <span class="review-card__date">Июль 2026</span>
+                    </p>
+                  </div>
+                  <div class="review-card__badge">✓ Проверен</div>
+                </div>
+                <div class="review-card__rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <p class="review-card__text">
+                  "Делал антикор + химчистку салона перед продажей. Машину 2018
+                  года привели в состояние, как будто только из салона.
+                  Покупатель был в шоке. Спасибо за честную работу и адекватные
+                  цены."
+                </p>
+              </div>
+            </div>
+
+            <button
+              class="reviews__nav reviews__nav--next"
+              aria-label="Следующий отзыв"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="reviews__indicators">
+            <button class="reviews__indicator active" data-index="0"></button>
+            <button class="reviews__indicator" data-index="1"></button>
+            <button class="reviews__indicator" data-index="2"></button>
+            <button class="reviews__indicator" data-index="3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title fade-in">
+            Свяжитесь <span class="contacts__title--blue">с нами</span>
+          </h2>
+          <p class="contacts__subtitle fade-in">
+            Приезжайте в студию или напишите в удобный мессенджер
+          </p>
+
+          <div class="contacts__wrapper">
+            <!-- Левая колонка: информация -->
+            <div class="contacts__info">
+              <!-- Телефон -->
+              <div class="contact-block contact-block--phone fade-in-scale">
+                <span class="contact-block__label">Позвоните нам</span>
+                <a href="tel:+375291234567" class="contact-block__value">
+                  +375 (29) 123-45-67
+                </a>
+                <span class="contact-block__hint"
+                  >Ежедневно с 10:00 до 21:00</span
+                >
+              </div>
+
+              <!-- Адрес -->
+              <div class="contact-block fade-in-scale">
+                <span class="contact-block__label">Адрес студии</span>
+                <p class="contact-block__value contact-block__address">
+                  г. Бобруйск,<br />
+                  ул. Минская, 000
+                </p>
+                <span class="contact-block__hint"
+                  >Тёплый бокс, удобная парковка</span
+                >
+              </div>
+
+              <!-- Мессенджеры -->
+              <div class="contact-block fade-in-scale">
+                <span class="contact-block__label">Напишите нам</span>
+                <div class="contact-block__messengers">
+                  <a
+                    href="https://t.me/bobrdtl"
+                    class="messenger-btn"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                      />
+                    </svg>
+                    Telegram
+                  </a>
+                  <a
+                    href="https://wa.me/375291234567"
+                    class="messenger-btn"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                      />
+                    </svg>
+                    WhatsApp
+                  </a>
+                  <a
+                    href="viber://chat?number=375291234567"
+                    class="messenger-btn"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M11.404 0C8.132.016 4.861 1.244 2.364 3.742c-3.152 3.151-3.152 8.253 0 11.404 2.5 2.498 5.77 3.727 9.04 3.711 1.657-.008 3.313-.422 4.804-1.244l3.978 1.086-1.086-3.811c.822-1.491 1.236-3.147 1.244-4.804.016-3.27-1.213-6.54-3.711-9.04C14.14 1.244 10.87.016 7.598 0h3.806zm.008 1.5c2.878.008 5.755 1.094 7.953 3.292 4.414 4.414 4.414 11.573 0 15.987-.398.398-.547.945-.398 1.491l.547 1.914-2.081-.547c-.547-.149-1.094 0-1.491.398-4.414 4.414-11.573 4.414-15.987 0-4.414-4.414-4.414-11.573 0-15.987C2.16 2.594 5.038 1.508 7.916 1.5h3.496zm-3.144 4.476c-.299 0-.597.149-.746.448l-1.194 2.089c-.149.299-.149.597 0 .896.746 1.343 1.791 2.537 3.134 3.283.299.149.597.149.896 0l2.089-1.194c.299-.149.448-.448.448-.746 0-.448-.448-.896-.896-.896h-1.045c-.149 0-.299.149-.448.299l-.746.746c-.149.149-.448.149-.597 0l-1.492-1.492c-.149-.149-.149-.448 0-.597l.746-.746c.149-.149.299-.299.299-.448v-1.045c0-.448-.448-.896-.896-.896h-.548z"
+                      />
+                    </svg>
+                    Viber
+                  </a>
+                </div>
+              </div>
+
+              <!-- Кнопка записи -->
+              <a
+                href="#"
+                class="contacts__cta btn btn__primary btn__large fade-in"
+                data-modal="open"
+              >
+                Записаться онлайн
+              </a>
+            </div>
+
+            <!-- Правая колонка: карта -->
+            <div class="contacts__map-wrapper fade-in-scale">
+              <div class="contacts__map-pin">
+                <div class="contacts__map-pulse"></div>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A&amp;source=constructor&amp;ll=29.2214%2C53.1444&amp;z=15&amp;pt=29.2214,53.1444,pm2rdm"
+                class="contacts__map"
+                allowfullscreen
+                loading="lazy"
+                title="Карта расположения студии GLOSS.POINT"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="site-footer__wrapper">
+          <!-- Колонка 1: О компании  -->
+          <div class="site-footer__col fade-in-scale">
+            <a href="index.html" class="site-footer__logo">
+              GLOSS<span class="site-footer__logo--accent">.POINT</span>
+            </a>
+            <p class="site-footer__about">
+              Профессиональный детейлинг-центр в Бобруйске. Оклейка винилом,
+              защитной плёнкой PPF, тонировка, ремонт фар и антикоррозийная
+              обработка.
+            </p>
+            <div class="site-footer__socials">
+              <a
+                href="https://t.me/bobrdtl"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Telegram"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/375291234567"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com/bobrdtl"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a
+                href="https://tiktok.com/@bobrdtl"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Колонка 2: Навигация -->
+          <div class="site-footer__col fade-in-scale">
+            <h4 class="site-footer__heading">Навигация</h4>
+            <nav class="site-footer__nav">
+              <a href="#services" class="site-footer__link">Услуги</a>
+              <a href="#portfolio" class="site-footer__link">Портфолио</a>
+              <a href="#pricing" class="site-footer__link">Цены</a>
+              <a href="#reviews" class="site-footer__link">Отзывы</a>
+              <a href="#contacts" class="site-footer__link">Контакты</a>
+            </nav>
+          </div>
+
+          <!-- Колонка 3: Контакты -->
+          <div class="site-footer__col fade-in-scale">
+            <h4 class="site-footer__heading">Контакты</h4>
+            <ul class="site-footer__contacts">
+              <li>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+              </li>
+              <li>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>г. Бобруйск, ул. Минская, 000</span>
+              </li>
+              <li>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </li>
+              <li>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:info@bobrdtl.by">info@bobrdtl.by</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Нижняя часть:ссылки -->
+        <div class="site-footer__bottom fade-in-scale">
+          <div class="site-footer__bottom-wrapper">
+            <p class="site-footer__copyright">
+              © 2026 GLOSS.POINT. Все права защищены.
+            </p>
+            <div class="site-footer__legal">
+              <a href="policy.html" class="site-footer__legal-link"
+                >Политика конфиденциальности</a
+              >
+              <span class="site-footer__divider">•</span>
+              <a href="terms.html" class="site-footer__legal-link"
+                >Пользовательское соглашение</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
