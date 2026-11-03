@@ -1,4 +1,5 @@
 .body__terms {
+  background-color: var(--color-bg);
   background-image:
     linear-gradient(to right, #2978ff33, transparent 15%),
     linear-gradient(to left, #2978ff33, transparent 15%);
@@ -26,7 +27,7 @@
 }
 .legal-page h2 {
   font-family: var(--font-headings);
-  font-size: 2.4rem; /* 24px */
+  font-size: 2.4rem; 
   font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -88,12 +89,12 @@
     }
 }
 @media (max-width: 480px) {
-    .body__terms {
-        background: linear-gradient(to right, #2978ff33, transparent 15%),
+    /* .body__terms {
+        background-image: linear-gradient(to right, #2978ff33, transparent 15%),
                     linear-gradient(to left, #2978ff33, transparent 15%),
-                    #1a1a2e !important;
+                    
         min-height: auto;
-    }
+    } */
 
     .legal-page {
         padding: 8rem 1.5rem 2rem; 
