@@ -403,7 +403,7 @@ button {
   }
 
   .header .btn__outline {
-    display: none;
+    /* display: none; */
   }
 
   .nav {
