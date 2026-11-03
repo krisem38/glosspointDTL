@@ -179,6 +179,61 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.querySelectorAll("[data-comparison]").forEach((slider) => {
+//     const afterImage = slider.querySelector(".comparison-slider__image--after");
+//     const handle = slider.querySelector(".comparison-slider__handle");
+//     let isDragging = false;
+
+//     function updateSlider(x) {
+//       const rect = slider.getBoundingClientRect();
+//       let position = ((x - rect.left) / rect.width) * 100;
+
+//       position = Math.max(0, Math.min(100, position));
+
+//       handle.style.left = `${position}%`;
+
+//       afterImage.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
+//     }
+
+//     slider.addEventListener("mousedown", (e) => {
+//       isDragging = true;
+//       updateSlider(e.clientX);
+//     });
+
+//     document.addEventListener("mousemove", (e) => {
+//       if (isDragging) {
+//         e.preventDefault();
+//         updateSlider(e.clientX);
+//       }
+//     });
+
+//     document.addEventListener("mouseup", () => {
+//       isDragging = false;
+//     });
+
+//     slider.addEventListener("touchstart", (e) => {
+//       isDragging = true;
+//       updateSlider(e.touches[0].clientX);
+//     });
+
+//     slider.addEventListener("touchmove", (e) => {
+//       if (isDragging) {
+//         updateSlider(e.touches[0].clientX);
+//       }
+//     });
+
+//     slider.addEventListener("touchend", () => {
+//       isDragging = false;
+//     });
+
+//     // Клик по слайдеру — перемещает ползунок
+//     slider.addEventListener("click", (e) => {
+//       updateSlider(e.clientX);
+//     });
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-comparison]").forEach((slider) => {
     const afterImage = slider.querySelector(".comparison-slider__image--after");
@@ -198,12 +253,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     slider.addEventListener("mousedown", (e) => {
       isDragging = true;
-      updateSlider(e.clientX);
+      e.preventDefault();
+    //   updateSlider(e.clientX);
     });
 
     document.addEventListener("mousemove", (e) => {
       if (isDragging) {
-        e.preventDefault();
+        // e.preventDefault();
         updateSlider(e.clientX);
       }
     });
