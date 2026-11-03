@@ -1,0 +1,300 @@
+:root {
+  --color-bg: #000;
+  --color-bg-secondary: #0a0a0a;
+  --color-accent: #2979ff;
+  --color-accent-hover: #1565c0;
+  --color-text-primary: #fff;
+  --color-text-secondary: #b0b0b0;
+  --color-border: rgba(255, 255, 255, 0.2);
+
+  --font-main:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-headings:
+    "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --conteiner-width: 128rem;
+  --border-radius: 5rem;
+  --border-radius-sm: 2.5rem;
+
+  --section-padding: 8rem 0;
+  --gap: 2.4rem;
+  --gap-lg: 4rem;
+  --gap-xl: 6rem;
+
+  --transition: all 0.3s ease;
+}
+
+.services {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(to bottom, #000000 0%, transparent 30%),
+    linear-gradient(to top, #000000 0%, transparent 30%),
+    linear-gradient(to right, #2978ff33, transparent 20%),
+    linear-gradient(to left, #2978ff33, transparent 20%);
+  background-repeat: no-repeat;
+}
+
+.services__content {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  margin-top: 7rem;
+  font-size: 3.5rem;
+}
+
+.services__title--blue {
+  color: var(--color-accent);
+}
+
+.services__grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+}
+
+.services__card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  width: auto;
+  min-height: 50rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow:
+      0 0.8rem 2.4rem rgba(41, 120, 255, 0.242),
+      inset 0.4rem 0.4rem 0.8rem rgba(255, 255, 255, 0.281);
+  }
+}
+
+.services__card--one {
+  background-image: url("../imeges/винил.webp");
+}
+.services__card--two {
+  background-image: url("../imeges/защитная\ пленка.webp");
+}
+.services__card--three {
+  background-image: url("../imeges/тонировка.webp");
+}
+.services__card--four {
+  background-image: url("../imeges/фара1.webp");
+}
+.services__card--five {
+  background-image: url("../imeges/арх\ тонировка.webp");
+}
+.services__card--six {
+  background-image: url("../imeges/дтл.webp");
+}
+
+.card__title {
+  color: var(--color-accent);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  line-height: 105%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.card__overlay {
+  background-color: rgba(0, 0, 0, 0.479);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  max-width: 90%;
+  min-height: 17rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__list li::before {
+  content: "•";
+  color: var(--color-accent);
+  margin: 1rem;
+}
+
+.card__list {
+  font-size: 1.6rem;
+  line-height: 130%;
+  letter-spacing: -1%;
+  margin: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.card__btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    background-color: var(--color-accent);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.632),
+      inset -0.2rem -0.2rem 0.5rem rgba(0, 0, 0, 0.632);
+  }
+}
+@media (max-width: 64rem) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+  }
+
+  .services__card {
+    min-height: 40rem;
+    min-width: 30rem;
+  }
+
+  .services__title {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 48rem) {
+  .services {
+    min-height: auto;
+    padding: 4rem 0;
+    background-image:
+      linear-gradient(to bottom, #000000 0%, transparent 30%),
+      linear-gradient(to top, #000000 0%, transparent 30%),
+      linear-gradient(to right, #2978ff33, transparent 10%),
+      linear-gradient(to left, #2978ff33, transparent 10%);
+
+    background-repeat: no-repeat;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+  }
+
+  .services__card {
+    min-height: 40rem;
+    min-width: 100%;
+  }
+
+  .services__title {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .card__overlay {
+    padding: 1.5rem;
+    height: auto;
+    min-height: 14rem;
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card__title {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .card__list {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card__list li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 25rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .card__list li::before {
+    content: "•";
+    color: var(--color-accent);
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .card__btn {
+    font-size: 1.2rem;
+    padding: 1.5rem 5rem;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 23.4rem) {
+  .services {
+    padding: 3rem 0;
+  }
+
+  .services__title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .services__card {
+    min-height: 30rem;
+  }
+
+  .card__overlay {
+    padding: 1rem;
+    min-height: 12rem;
+  }
+
+  .card__title {
+    font-size: 1.4rem;
+  }
+
+  .card__list {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .card__btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
